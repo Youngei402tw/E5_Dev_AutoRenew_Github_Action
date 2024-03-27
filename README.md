@@ -1,9 +1,9 @@
-# **MSO_E5_Dev_AutoRenew**
+# **E5_Dev_AutoRenew_Github_Action**
 
 This fork of MSO_E5_Dev_AutoRenew added a feature to update the refresh token for rclone, so that there is no need to reconfig after 90 days of in activity.
 It works by zipping rclone.conf in to the repo, after rclone read rclon.conf, delete the config folder. rclone.conf will be automatically updated, finally the updated rclone.conf will be zipped and upload on to the repo. Making the config process automatically done.
 
-# Following are the Original Readme**
+# Following are the Original Readme
 MSO_E5_Dev_AutoRenew is a Python application based on Git Actions that uses Microsoft Graph API to activate Microsoft Office 365 E5 Developer Trail membership auto-renewal automatically. This guide will provide you with easy-to-understand steps for setting up and running the application.
 
 ### Special Notes/Thanks ###
