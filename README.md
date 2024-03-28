@@ -19,6 +19,8 @@ E5_Dev_AutoRenew_Github_Action is a Python application based on Git Actions that
 
 ## **Setup Steps (Encrypted Secure Version)**
 
+!DO NOT FORK THIS REPO, INPORT IF WITH URL TO PREVENT ACCOUNT BAN FROM GITHUB!
+
 1. Setup rclone with onedrive, make sure that the name of config should be e5
 2. zip rclone.conf, check "ZIP Legacy Encryption" or else "unsupported compression method 99" will appear. Upload the zip file to this repo.
 3. Set the password for rclone.zip in settings→Secrets→New repository secret
