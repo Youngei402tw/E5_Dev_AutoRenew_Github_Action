@@ -2,13 +2,13 @@
 
 This fork of MSO_E5_Dev_AutoRenew added a feature to update the refresh token for rclone, so that there is no need to reconfig after 90 days of in activity.
 It works by zipping rclone.conf in to the repo, after rclone read rclon.conf, delete the config folder. rclone.conf will be automatically updated, finally the updated rclone.conf will be zipped and upload on to the repo. Making the config process automatically done.
-
-# Following are the Original Readme
-MSO_E5_Dev_AutoRenew is a Python application based on Git Actions that uses Microsoft Graph API to activate Microsoft Office 365 E5 Developer Trail membership auto-renewal automatically. This guide will provide you with easy-to-understand steps for setting up and running the application.
+
+E5_Dev_AutoRenew_Github_Action is a Python application based on Git Actions that uses Microsoft Graph API to activate Microsoft Office 365 E5 Developer Trail membership auto-renewal automatically. This guide will provide you with easy-to-understand steps for setting up and running the application.
 
 ### Special Notes/Thanks ###
-* Normal version address: [https://github.com/kylierst/MSO_E5_Dev_AutoRenew_REVISION_2](https://github.com/kylierst/MSO_E5_Dev_AutoRenew)
+* Original version address: [https://github.com/kylierst/MSO_E5_Dev_AutoRenew_REVISION_2](https://github.com/kylierst/MSO_E5_Dev_AutoRenew)
 * Thanks to Ken5998 for code improvements and fix job skipping
+* Thanks MSO for original code
 
 ## **Prerequisites**
 
@@ -20,7 +20,7 @@ MSO_E5_Dev_AutoRenew is a Python application based on Git Actions that uses Micr
 ## **Setup Steps (Encrypted Secure Version)**
 
 1. Setup rclone with onedrive, make sure that the name of config should be e5
-2. zip rclone.conf, check "ZIP Legacy Encryption" or else "unsupported compression method 99" will appear.
+2. zip rclone.conf, check "ZIP Legacy Encryption" or else "unsupported compression method 99" will appear. Upload the zip file to this repo.
 3. Set the password for rclone.zip in settings→Secrets→New repository secret
     - Name: **`PASSWD`** Value：**`your_zip_password`**
 4. Goto the project setting again and choose Actions menu and scroll down until you see **Workflow permissions click Read and write permission option**
